@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Proyecto Integrador - Etapa 1 (Nosostros)</title>
+  </head>
+  <body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand text-white" href="../index.html">CODESHOP</a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="/pages/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="/pages/nosotros.html">Nosotros</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                  <button class="btn btn-outline-secondary me-3 text-white" type="submit">Buscar</button>
+                </form>
+                <div class="d-flex">
+                  <div class="dropdown dropstart">
+                    <a type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span style="color: whitesmoke;">
+                        <i class="fa-solid fa-cart-shopping fa-xl fa-beat" style="--fa-animation-duration: 2s;"></i>
+                      </span>
+                    </a>
+                  
+                    <ul id="carrito" class="dropdown-menu mx-2">
+                      <table id="lista-carrito" class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Precio</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          
+                        </tbody>
+                      </table>
+                      <div class="d-grid gap-2 d-md-block justify-content-md-center ms-1">
+                        <button id="vaciar-carrito" class="btn btn-primary">Vaciar Carrito</button>
+                        <button button id="procesar-pedido" class="btn btn-danger">Procesar Compra</button>
+                      </div>
+                    </ul>
+                  </div>
+              </div>
+    
+          </nav>
+    </header>
+
+    <main class="container nosotros mt-3">
+      <div class="row">
+
+        <div class="col-5">
+            <h1 class="titulo-destacado">Sobre <span>nosotros</span></h1>
+            <h3 class="text-center">Si estás buscando un nuevo teléfono móvil, ¡Codeshop es el lugar perfecto para ti!</h3>
+            <p style="text-align: justify;">Somos tienda de celulares que ofrece una amplia variedad de dispositivos móviles y accesorios. Con su plataforma de pago seguro, puedes comprar tus productos favoritos de forma rápida y sencilla. Además, contamos con un equipo de expertos en tecnología que te brindarán asesoramiento personalizado para que puedas encontrar el dispositivo perfecto para ti. ¡No dudes en visitarnos!</p>
+
+          <h3 class="estiloletra text-center">Nuestras Redes</h3>
+            <div class="text-center">
+              <ul>
+                <a href="https://facebook.com"><span style="font-size: 3em; color: #1877f2;">
+                  <i class="fa-brands fa-facebook-square fa-xs fb"></i>
+                </span></a>
+                <a href="https://twitter"><span style="font-size: 3em; color: #1da1f2;">
+                  <i class="fa-brands fa-twitter-square fa-xs"></i>
+                </span></a>
+               <a href="https://instagram.com" display: inline-block><span style="font-size: 3em; color: #fd1d1d;">
+                  <i class="fa-brands fa-instagram-square fa-xs"></i>
+                </span></a>
+                <a href="mailto:max@gmail.com"><span style="font-size: 3em; color: #1877f2;">
+                  <i class="fa fa-envelope-square fa-xs"></i>
+                </span></a>
+              </ul>
+            </div>
+        </div>
+
+        <div class="col-7">
+            <div class="nosotros-imagen">
+              <img class="img-fluid imagenredondeada" src="/img/office.webp" alt="">
+            </div>
+        </div>
+
+      </div>
+    </main>
+   
+
+    <footer>
+      <!-- Copyright -->
+      <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <p>© 2023 CODESHOP, Inc. All rights reserved.</p>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

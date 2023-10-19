@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Asus Zenfone 3 Max</title>
+  </head>
+  <body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand text-white" href="../index.html">CODESHOP</a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="/pages/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="/pages/nosotros.html">Nosotros</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                  <button class="btn btn-outline-secondary me-3 text-white" type="submit">Buscar</button>
+                </form>
+                <div class="d-flex">
+                  <div class="dropdown dropstart">
+                    <a type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span style="color: whitesmoke;">
+                        <i class="fa-solid fa-cart-shopping fa-xl fa-beat" style="--fa-animation-duration: 2s;"></i>
+                      </span>
+                    </a>
+                  
+                    <ul id="carrito" class="dropdown-menu mx-2">
+                      <table id="lista-carrito" class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Precio</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          
+                        </tbody>
+                      </table>
+                      <div class="d-grid gap-2 d-md-block justify-content-md-center ms-1">
+                        <button id="vaciar-carrito" class="btn btn-danger">Vaciar Carrito</button>
+                        <button button id="procesar-pedido" class="btn btn-success">Procesar Compra</button>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <section class="container pt-4">
+            <div id="producto-individual" class="row">
+
+                <div class="col-md-6 mb-4">
+                    <img src="/img/Asus-Zenfone3.png" class="img-fluid shopitem" alt="">
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="p-4">
+                        <strong class="cel">Asus ZenFone 3 Max ZC520TL Dual SIM 32 GB</strong>
+                        <div class="precio pb-5 pt-2">
+                          <div id="element1"><p>$</p></div> 
+                          <div id="element2"> <span class="">2413</span> </div> 
+                        </div>
+                        <p style="text-align: justify;">El Asus ZenFone 3 Max ZC520TL es un teléfono inteligente de la marca Asus. Tiene una pantalla táctil IPS LCD de 5.2 pulgadas con una resolución de 720 x 1280 píxeles. El dispositivo está alimentado por un procesador MediaTek MT6737M de cuatro núcleos a 1.25 GHz y viene con 2 GB de RAM y 16 GB de almacenamiento interno que se puede ampliar hasta 32 GB mediante una tarjeta microSD. </p>
+                        <p style="text-align: justify;">En cuanto a la cámara, el Asus ZenFone 3 Max ZC520TL tiene una cámara principal de 13 megapíxeles en la parte trasera y una cámara frontal de 5 megapíxeles para selfies. El teléfono funciona con Android 6.0.1 y está alimentado por una batería no extraíble de iones de litio de 4100 mAh. El Asus ZenFone 3 Max ZC520TL mide 149.5 x 73.7 x 8.6 mm (alto x ancho x grosor) y pesa 148 gramos.</p>
+                        <div class="d-flex py-4">
+                          <button type="button" class="btn btn-success agregar-carrito " data-id="9">Comprar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+   
+    <script type="module" src="/main.js"></script>
+  
+    <footer>
+      <!-- Copyright -->
+      <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <p>© 2023 CODESHOP, Inc. All rights reserved.</p>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  
+  
+  </body>
+
+</html>

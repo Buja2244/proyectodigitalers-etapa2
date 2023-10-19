@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>Proyecto Integrador - Etapa 1</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand text-white" href="index.html">CODESHOP</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="/pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/pages/nosotros.html">Nosotros</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+            <button class="btn btn-outline-secondary me-3 text-white" type="submit">Buscar</button>
+          </form>
+          <div class="d-flex">
+            <div class="dropdown dropstart">
+              <a type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span style="color: whitesmoke;">
+                  <i class="fa-solid fa-cart-shopping fa-xl fa-beat" style="--fa-animation-duration: 2s;"></i>
+                </span>
+              </a>
+            
+              <ul id="carrito" class="dropdown-menu mx-2">
+                <table id="lista-carrito" class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Imagen</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Precio</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                  </tbody>
+                </table>
+                <div class="d-grid gap-2 d-md-block justify-content-md-center ms-1">
+                  <button id="vaciar-carrito" class="btn btn-danger">Vaciar Carrito</button>
+                  <button button id="procesar-pedido" class="btn btn-success">Procesar Compra</button>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <!-- Carrusel de marcas -->
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/img/banner-motorola.webp" class="d-block w-100" alt="Banner Motorola">
+      </div>
+      <div class="carousel-item">
+        <img src="/img/banner-lg.webp" class="d-block w-100" alt="Banner LG">
+      </div>
+      <div class="carousel-item">
+        <img src="/img/banner-asus.webp" class="d-block w-100" alt="Banner Asus">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <h1>Smartphones</h1>
+  <main class="container">
+    <section class="row m-1" style="justify-content: center;">
+      <!-- Celulares Motorola -->
+      <!-- Elemento 1 -->
+      <div class="card col-3 m-3 shadow-sm">
+        <a href="pages/Motorola-E13.html">
+          <img src="/img/Motorola-E13.webp" class="card-img-top" alt="Smartphone Motorola E13">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Smartphone Motorola Moto E13 64GB</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="list-group-item">Color: Verde</li>
+            <li class="list-group-item">Ram: 4GB</li>
+            <li class="list-group-item">Precio: $$$</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Elemento 2 -->
+      <div class="card col-3 m-3 shadow-sm">
+        <a href="pages/MotoG42.html">
+          <img src="/img/Motorola-G42.webp" class="card-img-top" alt="Smartphone Motorola Moto G42">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Smartphone Motorola Moto G42 128GB</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="list-group-item">Color: Azul</li>
+            <li class="list-group-item">Ram: 4GB</li>
+            <li class="list-group-item">Precio: $$$</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Elemento 3 -->
+      <div class="card col-3 m-3 shadow-sm">
+        <a href="pages/MotoEdge40.html">
+          <img src="/img/Motorola-Edge40.webp" class="card-img-top" alt="Smartphone Motorola Moto Edge 40">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Smartphone Motorola Moto Edge 40 5G 256GB</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="list-group-item">Color: Negro</li>
+            <li class="list-group-item">Ram: 8GB</li>
+            <li class="list-group-item">Precio: $$$</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Celulares LG -->
+      <!-- Elemento 1 -->
+      <div class="card col-3 m-3 shadow-sm">
+        <a href="pages/lgk22plus.html">
+          <img src="/img/LG-K22plus.webp" class="card-img-top" alt="Celular LG K22+">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Smartphone LG K22+ LMK200BAW 64GB</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="list-group-item">Color: Gris/Titanio</li>
+            <li class="list-group-item">Ram: 3GB</li>
+            <li class="list-group-item">Precio: $$$</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Elemento 2 -->
+      <div class="card col-3 m-3 shadow-sm">
+        <a href="pages/lgk52.html">
+          <img src="/img/LG-K52.webp" class="card-img-top" alt="Smartphone LG K52">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Smartphone LG K52 Octa-Core 64GB</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="list-group-item">Color: Gris</li>
+            <li class="list-group-item">Ram: 3GB</li>
+            <li class="list-group-item">Precio: $$$</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Elemento 3 -->
+      <div class="card col-3 m-3 shadow-sm">
+        <a href="pages/lgk62plus.html">
+          <img src="/img/LG-K62plus.webp" class="card-img-top" alt="Smartphone LG K62+">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Smartphone LG K62+ 128GB</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="list-group-item">Color: Blanco</li>
+            <li class="list-group-item">Ram: 4GB</li>
+            <li class="list-group-item">Precio: $$$</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Celulares Asus -->
+      <!-- Elemento 1 -->
+      <div class="card col-3 m-3 shadow-sm">
+        <a href="pages/asus-zb631.html">
+          <img src="/img/Asus-ZB631.webp" class="card-img-top" alt="Smartphone Asus ZB631">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Celular Asus ZB631 64gb</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="list-group-item">Color: Negro</li>
+            <li class="list-group-item">Ram: 6GB</li>
+            <li class="list-group-item">Precio: $$$</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Elemento 2 -->
+      <div class="card col-3 m-3 shadow-sm">
+        <a href="pages/asus-zenfone-8.html">
+          <img src="/img/Asus-Zenfone.webp" class="card-img-top" alt="Smartphone Asus Zenfone">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Smartphone Asus Zenfone 8 5G 128GB</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="list-group-item">Color: Negro</li>
+            <li class="list-group-item">Ram: 8GB</li>
+            <li class="list-group-item">Precio: $$$</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Elemento 3 -->
+      <div class="card col-3 m-3 shadow-sm">
+        <a href="pages/asus-zenfone-3-max.html">
+          <img src="/img/Asus-Zenfone3.png" class="card-img-top" alt="Smartphone Asus Zenfone 3">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Asus ZenFone 3 Max ZC520TL Dual SIM 32 GB</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="list-group-item">Color: Gris</li>
+            <li class="list-group-item">Ram: 3GB</li>
+            <li class="list-group-item">Precio: $$$</li>
+          </ul>
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+
+  <footer>
+    <!-- Copyright -->
+    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <p>© 2023 CODESHOP, Inc. All rights reserved.</p>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

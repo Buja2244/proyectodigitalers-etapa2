@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Asus ZB631</title>
+  </head>
+  <body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand text-white" href="../index.html">CODESHOP</a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="/pages/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="/pages/nosotros.html">Nosotros</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                  <button class="btn btn-outline-secondary me-3 text-white" type="submit">Buscar</button>
+                </form>
+                <div class="d-flex">
+                  <div class="dropdown dropstart">
+                    <a type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span style="color: whitesmoke;">
+                        <i class="fa-solid fa-cart-shopping fa-xl fa-beat" style="--fa-animation-duration: 2s;"></i>
+                      </span>
+                    </a>
+                  
+                    <ul id="carrito" class="dropdown-menu mx-2">
+                      <table id="lista-carrito" class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Precio</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          
+                        </tbody>
+                      </table>
+                      <div class="d-grid gap-2 d-md-block justify-content-md-center ms-1">
+                        <button id="vaciar-carrito" class="btn btn-danger">Vaciar Carrito</button>
+                        <button button id="procesar-pedido" class="btn btn-success">Procesar Compra</button>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <section class="container pt-4">
+            <div id="producto-individual" class="row">
+
+                <div class="col-md-6 mb-4">
+                    <img src="/img/Asus-ZB631.webp" class="img-fluid shopitem" alt="">
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="p-4">
+                        <strong class="cel">Celular Asus ZB631 64gb</strong>
+                        <div class="precio pb-5 pt-2">
+                          <div id="element1"><p>$</p></div> 
+                          <div id="element2"> <span class="">2233</span> </div> 
+                        </div>
+                        <p style="text-align: justify;">El Asus Zenfone Max Pro (M2) ZB631KL tiene una pantalla IPS LCD de 6.26 pulgadas con una resolución de 1080 x 2280 píxeles y una relación pantalla-cuerpo del 82%. El teléfono está alimentado por un procesador Qualcomm SDM660 Snapdragon 660 (14 nm) y viene con opciones de almacenamiento interno de 32 GB, 64 GB o 128 GB, que se pueden expandir hasta 512 GB mediante una tarjeta microSD dedicada. El dispositivo tiene una batería Li-Po de 5000 mAh que admite carga rápida de 10 W.</p>
+                        <p style="text-align: justify;">En cuanto a la cámara, tiene una configuración de cámara trasera doble de 12 MP + 5 MP y una cámara frontal única de 13 MP. La cámara trasera admite grabación de video en resolución 4K a 30 fps y la cámara frontal admite grabación de video en resolución Full HD a 30 fps.
+                        </p>
+                        <div class="d-flex py-1">
+                          <button type="button" class="btn btn-success agregar-carrito " data-id="7">Comprar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+   
+    <script type="module" src="/main.js"></script>
+
+    <footer>
+      <!-- Copyright -->
+      <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <p>© 2023 CODESHOP, Inc. All rights reserved.</p>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Asus Zenfone 8</title>
+  </head>
+  <body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand text-white" href="../index.html">CODESHOP</a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="/pages/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="/pages/nosotros.html">Nosotros</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                  <button class="btn btn-outline-secondary me-3 text-white" type="submit">Buscar</button>
+                </form>
+                <div class="d-flex">
+                  <div class="dropdown dropstart">
+                    <a type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span style="color: whitesmoke;">
+                        <i class="fa-solid fa-cart-shopping fa-xl fa-beat" style="--fa-animation-duration: 2s;"></i>
+                      </span>
+                    </a>
+                  
+                    <ul id="carrito" class="dropdown-menu mx-2">
+                      <table id="lista-carrito" class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Precio</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          
+                        </tbody>
+                      </table>
+                      <div class="d-grid gap-2 d-md-block justify-content-md-center ms-1">
+                        <button id="vaciar-carrito" class="btn btn-danger">Vaciar Carrito</button>
+                        <button button id="procesar-pedido" class="btn btn-success">Procesar Compra</button>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <section class="container pt-4">
+            <div id="producto-individual" class="row">
+
+                <div class="col-md-6 mb-4">
+                    <img src="/img/Asus-Zenfone.webp" class="img-fluid shopitem" alt="">
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="p-4">
+                        <strong class="cel">Smartphone Asus Zenfone 8 5G 128GB</strong>
+                        <div class="precio pb-5 pt-2">
+                          <div id="element1"><p>$</p></div> 
+                          <div id="element2"> <span class="">4019</span> </div> 
+                        </div>
+                        <p style="text-align: justify;">El Asus Zenfone 8 es un smartphone de alta gama con un diseño compacto y elegante. Tiene una pantalla Samsung E4 AMOLED de 5,9 pulgadas con una resolución FullHD+ (2.400 x 1.080 px) y una tasa de refresco de 120 Hz. El dispositivo está alimentado por el procesador Qualcomm Snapdragon 888 5G y viene con opciones de RAM de 6/8/16 GB LPDDR5 y almacenamiento interno de 128/256 GB UFS 3.1.
+                        </p>
+                        <p style="text-align: justify;">El Zenfone 8 cuenta con una cámara trasera doble que incluye un sensor principal SONY IMX686 de 64 MP OIS y un sensor ultra gran angular SONY IMX363 de 12 MP 113º, así como una cámara frontal Sony IMX663 de 12 MP1. La batería tiene una capacidad de 4.000 mAh y admite carga rápida de hasta 30 W.</p>
+                        <div class="d-flex py-4">
+                          <button type="button" class="btn btn-success agregar-carrito " data-id="8">Comprar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+   
+    <script type="module" src="/main.js"></script>
+  
+    <footer>
+      <!-- Copyright -->
+      <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <p>© 2023 CODESHOP, Inc. All rights reserved.</p>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  
+  </body>
+
+
+
+
+</html>

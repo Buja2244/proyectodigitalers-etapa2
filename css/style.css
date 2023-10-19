@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+body{
+        background-image: linear-gradient(0deg, rgba(227,226,245,1) 0%, rgba(174,174,194,1) 50%, rgba(227,226,245,1) 100%);
+    }
+
+.navbar {
+    background-image: url("/img/dana-luig-u5dCAaQ6JsA-unsplash.webp");
+    background-size: cover;
+
+    /* Workaround for some mobile browsers */
+    min-height: 100%;
+}
+
+.navbar-brand{
+    font-size: 40px;
+    font-family: 'Black Ops One', cursive;
+}
+
+h1{
+    font-size: 40px;
+    margin-top: 15px;
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+}
+
+h2{
+    font-size: 40px;
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+}
+
+
+.shopitem{
+    width: 70%;
+    border-radius: 20px;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.cel{
+    font-size: 20px;
+    font-family: 'Black Ops One', cursive;
+}
+
+.precio{
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Black Ops One'
+}
+
+.articulo{
+    font-size: medium;
+}
+
+.pago{
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.estiloletra{
+    font-size: 30px;
+    font-family: 'Black Ops One', cursive;
+}
+
+.imagenredondeada{
+    border-radius: 20px;
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#element1 {display:inline-block;margin-right:10px; width: 5px;;} 
+#element2 {display:inline-block; width:200px;} 
+
+
